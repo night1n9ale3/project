@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@800&family=Montserrat:wght@400;500&family=Righteous:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@800&family=Montserrat+Alternates&family=Montserrat:wght@400;500&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@800&family=Montserrat+Alternates&family=Montserrat:wght@400;500&family=Righteous&family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto';
+}
+
+.AC {
+    text-decoration: none;
+    color: rgb(46, 196, 255);
+    font-size: 30px;
+    width: 300px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 900;
+}
+
+.AC-Com {
+    font-family: 'Righteous';
+}
+
+.nav_input {
+    color: grey;
+}
+
+.bi {
+    position: relative;
+    left: 200px;
+    top: 5px;
+    color: darkgrey;
+}
