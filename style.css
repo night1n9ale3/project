@@ -23,33 +23,67 @@
     color: grey;
 }
 
-.search {
+.search>button {
     border-radius: 5px;
-    width: 60px;
+    width: 35.5px;
     height: 35.5px;
+    border: none;
     background: #fff;
     margin-top: 1.5px;
     margin-right: 5px;
 }
 
 .bi {
-    margin-left: 7px;
-    margin-top: 7px;
     background: #fff;
     color: darkgrey;
 }
 
 .YouTube {
-    margin-top: 100px;
     margin-left: 40px;
+    margin-top: 50px;
+}
+
+.YouTube-heading {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    grid-gap: 50px;
+}
+
+.YH-part-1 {
+    margin-left: 20px;
+}
+
+.YouTube-img-2 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
 
 .YouTube-title {
     margin-top: 20px;
 }
 
+.YouTube-title>b {
+    color: red;
+}
+
+.YouTube-img {
+    width: 1270px;
+}
+
 .YouTube-text {
     width: 300px;
+}
+
+.YouTube-main {
+    margin-left: 20px;
+}
+
+.more-info {
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .YouTube-channel {
@@ -58,3 +92,37 @@
     font-weight: 600;
 }
 
+
+@media only screen and (max-width:1024px) {
+    .YouTube {
+        margin-left: 20px;
+    }
+
+    .YouTube-img {
+        width: 990px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .YouTube-img {
+        width: 730px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .YouTube {
+        margin-left: 10px;
+    }
+
+    .YouTube-img {
+        width: 400px;
+    }
+
+    .YouTube-heading {
+        display: grid;
+    }
+
+    .YH-part-2 {
+        margin-left: 15px;
+    }
+}
