@@ -10,6 +10,10 @@ body {
     background: linear-gradient(45deg, rgb(255, 36, 36), rgb(0, 187, 255));
 }
 
+.container {
+    max-width: 1440px;
+}
+
 .AC {
     text-decoration: none;
     color: rgb(46, 196, 255);
@@ -43,7 +47,7 @@ body {
 }
 
 #YouTube {
-    margin-left: 40px;
+    margin-left: -60px;
     margin-top: 50px;
 }
 
@@ -55,7 +59,7 @@ body {
 }
 
 .YH-part-1 {
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 .YouTube-img {
@@ -75,6 +79,11 @@ body {
     color: #fff;
 }
 
+.bi-youtube {
+    color: red;
+    background-image: url(./Аннотация\ 2023-05-16\ 000104.jpg);
+}
+
 .YouTube-title>b {
     color: red;
 }
@@ -89,15 +98,21 @@ body {
 }
 
 .YouTube-main {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .more-info {
     color: #fff;
     margin-top: 50px;
-    margin-left: 20px;
+    margin-left: 10px;
     font-weight: 500;
     font-size: 20px;
+}
+
+.more-info-menu {
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 1000px;
 }
 
 .YouTube-channel {
@@ -108,12 +123,12 @@ body {
 
 #Discord {
     margin-top: 200px;
-    margin-left: 50px;
+    margin-left: -60px;
 }
 
 .discord-img {
     border: 4px solid #fff;
-    margin-left: 25px;
+    margin-left: 15px;
     border-radius: 20px;
     width: 1200px;
 }
@@ -127,8 +142,10 @@ body {
 
 .Discord-heading {
     margin-top: 100px;
-    margin-left: 40px;
+    margin-left: 20px;
     grid-gap: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .DH-heading-title>h1 {
@@ -152,39 +169,79 @@ body {
 }
 
 .DH-info {
+    font-size: 20px;
     margin-top: 20px;
     margin-left: 10px;
     width: 300px;
     color: #fff;
 }
 
-.DH-info>p {
-    font-size: 20px;
-}
-
 @media only screen and (max-width:1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
     #YouTube {
         margin-left: 20px;
     }
 
     .YouTube-img {
-        width: 990px;
+        width: 890px;
+    }
+
+    .bi-youtube {
+        background-image: url(./Аннотация\ 2023-05-16\ 005826.jpg);
+    }
+
+    .more-info-menu {
+        width: 700px;
+    }
+
+    .discord-img {
+        width: 1000px;
+        margin-left: 28px;
     }
 }
 
 @media only screen and (max-width: 768px) {
+    #YouTube {
+        margin-left: -20px;
+    }
+
     .YouTube-img {
-        width: 730px;
+        width: 700px;
+    }
+
+    .bi-youtube {
+        background-image: url(./Аннотация\ 2023-05-16\ 011641.jpg);
+    }
+
+    .discord-img {
+        width: 700px;
+        margin-left: 55px;
+    }
+
+    .Discord-heading {
+        margin-left: 60px;
+    }
+
+    .Discord-2-img>img {
+        width: 300px;
     }
 }
 
 @media only screen and (max-width: 425px) {
+    .container {
+        max-width: 425px;
+    }
+
     #YouTube {
         margin-left: 10px;
     }
 
     .YouTube-img {
         width: 400px;
+        margin-left: -10px;
     }
 
     .YouTube-heading {
@@ -193,5 +250,49 @@ body {
 
     .YH-part-2 {
         margin-left: 15px;
+    }
+
+    .more-info-menu {
+        width: 300px;
+    }
+
+    .discord-img {
+        width: 400px;
+    }
+
+    .Discord-heading {
+        display: grid;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
+
+    .YouTube-img {
+        width: 350px;
+    }
+
+    .discord-img {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .YouTube-img {
+        width: 300px;
+    }
+
+    .more-info-menu {
+        width: 250px;
+    }
+
+    .discord-img {
+        width: 300px;
     }
 }
