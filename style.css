@@ -1,30 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@800&family=Montserrat:wght@400;500&family=Righteous:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@800&family=Montserrat+Alternates&family=Montserrat:wght@400;500&family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@800&family=Montserrat+Alternates&family=Montserrat:wght@400;500&family=Righteous&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@800&family=Montserrat+Alternates&family=Montserrat:wght@400;500&family=Righteous&family=Roboto&family=Roboto+Slab:wght@500&family=Russo+One&display=swap');
+
 
 * {
     font-family: 'Roboto';
 }
 
 body {
-    background: linear-gradient(45deg, rgb(166, 0, 125), rgb(0, 125, 174), rgb(0, 34, 255));
+    background: linear-gradient(45deg, rgb(111, 0, 123), rgb(0, 125, 174), rgb(0, 34, 255));
 }
 
 .container {
     max-width: 1440px;
 }
 
-.AC {
-    text-decoration: none;
-    color: rgb(46, 196, 255);
-    font-size: 30px;
-    width: 300px;
-    font-family: 'Montserrat Alternates';
-    font-weight: 900;
-}
-
-.AC-Com {
-    font-family: 'Righteous';
+.nav-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .nav_input {
@@ -46,9 +41,66 @@ body {
     color: darkgrey;
 }
 
+.close {
+    margin-top: 20px;
+    margin-left: 350px;
+}
+
+.AC {
+    text-decoration: none;
+    color: rgb(46, 196, 255);
+    font-size: 30px;
+    width: 300px;
+    margin-right: 550px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 900;
+}
+
+.AC-Com {
+    font-family: 'Righteous';
+}
+
+.AC-2 {
+    position: relative;
+    bottom: 50px;
+    font-weight: 600;
+    color: #2ec4ff;
+    font-family: 'Righteous';
+    font-size: 100px;
+    text-shadow: 1px 1px 0px #007aaa;
+}
+
+.AC-2-second {
+    position: relative;
+    bottom: 25px;
+    right: 55px;
+    font-weight: 600;
+    font-family: 'Montserrat Alternates';
+    font-size: 25px;
+}
+
+.hr {
+    background: #909090;
+    width: 398px;
+    height: 1px;
+}
+
+.link:active {
+    cursor: pointer;
+    color: #007aaa;
+}
+
+.welcome-title {
+    font-size: 35px;
+    width: 450px;
+    text-align: center;
+    margin-left: 50px;
+    font-family: 'Roboto Slab';
+}
+
 #YouTube {
-    margin-left: -60px;
-    margin-top: 50px;
+    margin-left: 40px;
+    margin-top: 250px;
 }
 
 .YouTube-heading {
@@ -63,6 +115,8 @@ body {
 }
 
 .YouTube-img {
+    margin-left: -120px;
+    width: 1350px;
     border-radius: 10px;
     border: 3px solid red;
 }
@@ -123,20 +177,20 @@ body {
 
 #Discord {
     margin-top: 200px;
-    margin-left: -60px;
 }
 
 .discord-img {
     border: 4px solid #fff;
-    margin-left: 15px;
+    margin-left: -95px;
     border-radius: 20px;
-    width: 1200px;
+    width: 1300px;
 }
 
 .discord-elements {
     display: flex;
     align-items: center;
     grid-gap: 50px;
+    margin-left: 40px;
     margin-top: 100px;
 }
 
@@ -172,6 +226,10 @@ body {
     padding: 10px;
 }
 
+.discord-elements {
+    margin-left: 200px;
+}
+
 .DH-info {
     font-size: 20px;
     margin-top: 20px;
@@ -185,12 +243,17 @@ body {
         max-width: 1024px;
     }
 
+    .AC {
+        margin-right: 250px;
+    }
+
     #YouTube {
         margin-left: 20px;
     }
 
     .YouTube-img {
-        width: 890px;
+        width: 1000px;
+        margin-left: -50px;
     }
 
     .bi-youtube {
@@ -201,13 +264,53 @@ body {
         width: 700px;
     }
 
+    #Discord {
+        margin-left: -60px;
+    }
+
     .discord-img {
         width: 1000px;
         margin-left: 28px;
     }
+
+    .discord-elements {
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .container {
+        max-width: 991px;
+    }
+
+    #YouTube {
+        margin-left: -100px;
+    }
+
+    .YouTube-img {
+        margin-left: 10px;
+        width: 850px;
+    }
+
+    .discord-img {
+        margin-left: -85px;
+        width: 985px;
+    }
+
+    .discord-elements {
+        margin-left: 10px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .AC {
+        margin-right: 25px;
+    }
+
     #YouTube {
         margin-left: -20px;
     }
@@ -225,7 +328,7 @@ body {
         margin-left: 55px;
     }
 
-    .Discord-heading {
+    .discord-elements {
         margin-left: 60px;
     }
 
@@ -237,6 +340,10 @@ body {
 @media only screen and (max-width: 425px) {
     .container {
         max-width: 425px;
+    }
+
+    .nav-search {
+        display: none;
     }
 
     #YouTube {
@@ -268,6 +375,10 @@ body {
         width: 400px;
     }
 
+    .discord-elements {
+        margin-left: 80px;
+    }
+
     .Discord-heading {
         display: grid;
     }
@@ -278,18 +389,48 @@ body {
         max-width: 375px;
     }
 
+    .AC {
+        margin-right: -10px;
+    }
+
+    .bi-list {
+        width: 30px;
+        height: 30px;
+    }
+
+    .close {
+        margin-left: 320px;
+    }
+
     .YouTube-img {
         width: 350px;
     }
 
     .discord-img {
-        width: 350px;
+        width: 360px;
+    }
+
+    .discord-elements {
+        margin-left: 50px;
+    }
+
+    .Discord-2-img {
+        margin-left: 15px;
     }
 }
 
 @media only screen and (max-width: 320px) {
     .container {
         max-width: 320px;
+    }
+
+    .hamburger_menu {
+        margin-left: -20px;
+    }
+
+    .AC {
+        margin-right: -50px;
+        font-size: 28px;
     }
 
     .YouTube-img {
@@ -311,5 +452,9 @@ body {
     .DH-info {
         width: 250px;
         text-align: center;
+    }
+
+    .Discord-2-img {
+        margin-left: -12.5px;
     }
 }

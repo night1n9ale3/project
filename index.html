@@ -14,62 +14,77 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-primary-subtle">
+        <nav class="navbar bg-primary-subtle flex">
             <div class="container-fluid">
-                <b class="AC">Alyaka <b class="AC-Com">Community</b></b>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="btn hamburger_menu" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Главная</a>
-                        </li>
-                        <ul class="nav nav-pills">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#YouTube">YouTube</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Discord">Discord</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                    aria-expanded="false">Другое</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#scrollspyHeading3">A</a></li>
-                                    <li><a class="dropdown-item" href="#scrollspyHeading4">B</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#scrollspyHeading5">C</a></li>
-                                    <li><a class="dropdown-item" href="#scrollspyHeading6">D</a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <div class="search">
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                    class="bi bi-search" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                </svg>
-                            </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <button type="button" class="btn-close close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                    <div class="offcanvas-header" style="display: grid;">
+                        <div class="OH-1">
+                            <b class="AC-2"> C <b class="AC-2-second">Alyaka⫺</b></b>
                         </div>
-                        <input class="form-control me-2 nav_input" type="search" placeholder="Поиск..."
-                            aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">НАЙТИ</button>
-                    </form>
+                        <div class="OH-2">
+                            <ul>
+                                <li class="nav-item" style="list-style: none;">
+                                    <a class="nav-link active" aria-current="page" href="#"
+                                        style="margin-bottom: -20px; font-size: 25px;">Главная</a>
+                                </li>
+                        </div>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <ul>
+                                <li class="nav-item" style="list-style: none;">
+                                    <a class="nav-link link" href="#YouTube">YouTube</a>
+                                </li>
+                                <hr>
+                                <li class="nav-item" style="list-style: none;">
+                                    <a class="nav-link link" href="#Discord">Discord</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <b class="AC">Alyaka <b class="AC-Com">Community</b></b>
+                <form class="nav-search" role="search">
+                    <div class="search">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <input class="form-control me-2 nav_input" type="search" placeholder="Поиск..." aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">НАЙТИ</button>
+                </form>
+            </div>
             </div>
         </nav>
     </header>
 
     <main class="container">
+        <!-- <div class="row g-0 bg-body-secondary position-relative" style="margin-top: 100px;">
+            <div class="col-md-6 mb-md-0 p-md-4">
+                <img src="https://volonterpmr.info/wp-content/uploads/2022/02/dobro-pozhlovat-15.gif" class="w-100"
+                    alt="welcome">
+            </div>
+            <div class="col-md-6 p-4 ps-md-0">
+                <h5 class="welcome-title">Ты попал на сообщество аляки, здесь его оригинальная</p>
+            </div>
+        </div>
+        </div> -->
         <div id="YouTube">
             <img class="YouTube-img" src="./Аннотация 2023-05-16 225609.jpg" alt="alyakich">
             <div class="YouTube-heading">
@@ -169,7 +184,8 @@
                         <h1>Наш <b>Discord</b> сервер</h1>
                         <a href="https://discord.gg/vTXkugjX" class="DH-channel"><img
                                 src="./discord-icon-svgrepo-com.svg" alt="discord"></a>
-                        <p class="DH-info">Присоединись к нашему дискорд серверу и ты будешь в курсе самых свежих новостей!</p>
+                        <p class="DH-info">Присоединись к нашему дискорд серверу и ты будешь в курсе самых свежих
+                            новостей!</p>
                     </div>
                     <div class="Discord-2-img">
                         <img src="./20220715_142705.gif" alt="discord-2">
