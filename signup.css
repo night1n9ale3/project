@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@800&family=Montserrat+Alternates&family=Montserrat:wght@400;500&family=Righteous&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@800&family=Montserrat+Alternates&family=Montserrat:wght@400;500&family=Righteous&family=Roboto&family=Roboto+Slab:wght@500&family=Russo+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+
+a:hover {
+    transition: 0.2s;
+    padding: 16px 22px;
+    box-shadow: 3px 3px 10px grey;
+}
+
+.signupbtn {
+    background: #00b141;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 50px;
+    margin-left: 100px;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 30%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}

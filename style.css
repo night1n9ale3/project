@@ -9,11 +9,106 @@
 }
 
 body {
-    background: linear-gradient(45deg, rgb(111, 0, 123), rgb(0, 125, 174), rgb(0, 34, 255));
+    background: linear-gradient(30deg, rgb(119, 31, 154), rgb(111, 0, 123), rgb(0, 125, 174), rgb(0, 34, 255));
 }
 
 .container {
     max-width: 1440px;
+}
+
+.bi-list {
+    margin-left: 40px;
+}
+
+.empty {
+    margin-top: 10px;
+    color: #202020;
+    font-size: 20px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.closebtn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: #f1f1f1;
+}
+
+li {
+    list-style: none;
+}
+
+.oc-active {
+    background: #9fc4f1;
+    text-decoration: none;
+    color: #315ee4;
+    border: none;
+    width: 250px;
+    font-size: 30px;
+    margin-left: -32px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.oc-link {
+    color: #7cc7e5;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    top: 20px;
+}
+
+.hr {
+    width: 300px;
+    height: 1px;
+    background: #909090;
+    margin-bottom: 10px;
+    margin-left: -100px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sidenav {
+        width: 220px;
+    }
 }
 
 .nav-search {
@@ -24,6 +119,10 @@ body {
 
 .nav_input {
     color: grey;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-right: 5px;
 }
 
 .search>button {
@@ -32,26 +131,18 @@ body {
     height: 35.5px;
     border: none;
     background: #fff;
-    margin-top: 1.5px;
+    margin-top: 0.5px;
     margin-right: 5px;
-}
-
-.bi {
-    background: #fff;
+    border: 1px solid #ddd;
     color: darkgrey;
-}
-
-.close {
-    margin-top: 20px;
-    margin-left: 350px;
 }
 
 .AC {
     text-decoration: none;
-    color: rgb(46, 196, 255);
+    color: #2ec4ff;
     font-size: 30px;
     width: 300px;
-    margin-right: 550px;
+    margin-left: 250px;
     font-family: 'Montserrat Alternates';
     font-weight: 900;
 }
@@ -61,8 +152,7 @@ body {
 }
 
 .AC-2 {
-    position: relative;
-    bottom: 50px;
+    margin-left: 30px;
     font-weight: 600;
     color: #2ec4ff;
     font-family: 'Righteous';
@@ -79,23 +169,28 @@ body {
     font-size: 25px;
 }
 
-.hr {
-    background: #909090;
-    width: 398px;
-    height: 1px;
-}
-
-.link:active {
-    cursor: pointer;
-    color: #007aaa;
+.welcome-img {
+    width: 580px;
+    height: 350px;
 }
 
 .welcome-title {
-    font-size: 35px;
+    font-size: 30px;
     width: 450px;
     text-align: center;
     margin-left: 50px;
     font-family: 'Roboto Slab';
+}
+
+.welcome-text {
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 400px;
+}
+
+.welcome-text-child {
+    font-size: 25px;
+    font-family: 'Roboto';
 }
 
 #YouTube {
@@ -135,7 +230,7 @@ body {
 
 .bi-youtube {
     color: red;
-    background-image: url(./Аннотация\ 2023-05-16\ 221208.jpg);
+    background-image: url(./1321px.jpg);
 }
 
 .YouTube-title>b {
@@ -238,13 +333,48 @@ body {
     color: #fff;
 }
 
+@media only screen and (min-width:1440px) {
+    .YouTube-img {
+        margin-left: -30px;
+    }
+
+    .discord-img {
+        margin-left: -10px;
+    }
+}
+
 @media only screen and (max-width:1024px) {
     .container {
         max-width: 1024px;
     }
 
+    .empty {
+        font-size: 15px;
+    }
+
     .AC {
-        margin-right: 250px;
+        margin-left: 10px;
+    }
+
+    .welcome-img {
+        width: 490px;
+        height: 310px;
+    }
+
+    .welcome-title {
+        font-size: 27px;
+        width: 400px;
+        margin-left: 30px;
+    }
+
+    .welcome-text {
+        margin-left: 60px;
+        margin-top: 20px;
+        width: 400px;
+    }
+
+    .welcome-text-child {
+        font-size: 22px;
     }
 
     #YouTube {
@@ -257,7 +387,7 @@ body {
     }
 
     .bi-youtube {
-        background-image: url(./Аннотация\ 2023-05-16\ 230225.jpg);
+        background-image: url(./1024px.jpg);
     }
 
     .more-info-menu {
@@ -281,6 +411,40 @@ body {
 @media only screen and (max-width:991px) {
     .container {
         max-width: 991px;
+    }
+
+    .empty {
+        margin-left: -45px;
+    }
+
+    .AC {
+        margin-left: 20px;
+    }
+
+    .bi-youtube {
+        background-image: url(./991px.jpg);
+    }
+
+    .welcome-img {
+        width: 645px;
+        height: 350px;
+    }
+
+    .welcome-title {
+        font-size: 25px;
+        width: 400px;
+        margin-left: -180px;
+        margin-top: 400px;
+    }
+
+    .welcome-text {
+        margin-left: -300px;
+        margin-top: 30px;
+        width: 600px;
+    }
+
+    .welcome-text-child {
+        font-size: 20px;
     }
 
     #YouTube {
@@ -307,20 +471,37 @@ body {
         max-width: 768px;
     }
 
+    .empty {
+        display: none;
+    }
+
     .AC {
-        margin-right: 25px;
+        margin-left: -10px;
+    }
+
+    .welcome-img {
+        width: 650px;
+        height: 350px;
+    }
+
+    .welcome-title {
+        font-size: 30px;
+        width: 500px;
+        margin-left: -250px;
+        margin-top: 400px;
     }
 
     #YouTube {
-        margin-left: -20px;
+        margin-left: -10px;
     }
 
     .YouTube-img {
-        width: 700px;
+        width: 730px;
+        margin-left: -5px;
     }
 
     .bi-youtube {
-        background-image: url(./Аннотация\ 2023-05-16\ 230513.jpg);
+        background-image: url(./768px.jpg);
     }
 
     .discord-img {
@@ -342,8 +523,32 @@ body {
         max-width: 425px;
     }
 
+    .bi-list {
+        margin-left: 1px;
+    }
+
     .nav-search {
-        display: none;
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+
+    .welcome-img {
+        width: 360px;
+        height: 200px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .welcome-title {
+        font-size: 25px;
+        width: 350px;
+        margin-left: -5px;
+        margin-top: 20px;
+    }
+
+    .welcome-text {
+        margin-left: 15px;
+        width: 300px;
     }
 
     #YouTube {
@@ -360,7 +565,7 @@ body {
     }
 
     .bi-youtube {
-        background-image: url(./Аннотация\ 2023-05-16\ 230743.jpg);
+        background-image: url(./425px.jpg);
     }
 
     .YH-part-2 {
@@ -390,7 +595,30 @@ body {
     }
 
     .AC {
-        margin-right: -10px;
+        margin-left: 1px;
+    }
+
+    .nav-search {
+        margin-left: 20px;
+    }
+
+    .welcome-img {
+        width: 320px;
+        height: 200px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .welcome-title {
+        font-size: 25px;
+        width: 350px;
+        margin-left: -20px;
+        margin-top: 20px;
+    }
+
+    .welcome-text {
+        margin-left: 15px;
+        width: 300px;
     }
 
     .bi-list {
@@ -404,6 +632,10 @@ body {
 
     .YouTube-img {
         width: 350px;
+    }
+
+    .bi-youtube {
+        background-image: url(./375px.jpg);
     }
 
     .discord-img {
@@ -424,8 +656,40 @@ body {
         max-width: 320px;
     }
 
-    .hamburger_menu {
-        margin-left: -20px;
+    .AC {
+        margin-left: 10px;
+    }
+
+    .bi-list {
+        margin-left: -1px;
+    }
+
+    .nav-search {
+        margin-left: 1px;
+    }
+
+    .nav_input {
+        padding: 5px 1px;
+    }
+
+    .welcome-img {
+        width: 280px;
+        height: 180px;
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+
+    .welcome-title {
+        font-size: 20px;
+        width: 300px;
+        margin-right: 50px;
+        margin-top: 20px;
+    }
+
+    .welcome-text {
+        margin-left: -5px;
+        width: 250px;
+        font-size: 18px;
     }
 
     .AC {
@@ -435,6 +699,10 @@ body {
 
     .YouTube-img {
         width: 300px;
+    }
+
+    .bi-youtube {
+        background-image: url(./320px.jpg);
     }
 
     .YouTube-text {
