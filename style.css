@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1326px;
 }
 
 .bi-list {
@@ -193,6 +193,46 @@ li {
     font-family: 'Roboto';
 }
 
+
+#developers {
+    background: #17c1e3;
+    margin-top: 100px;
+    height: 700px;
+    width: 1348px;
+    margin-left: -116px;
+}
+
+
+.developers-title {
+    text-align: center;
+    color: #f1f1f1;
+    text-shadow: 2px 1px #007aaa;
+    padding-top: 20px;
+}
+
+.column {
+    display: grid;
+    line-height: 80px;
+}
+
+.developers-menu {
+    margin-top: 100px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 650px);
+}
+
+.column-elements {
+    color: white;
+    font-size: 35px;
+}
+
+.developers-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
 #YouTube {
     margin-left: 40px;
     margin-top: 250px;
@@ -229,12 +269,13 @@ li {
 }
 
 .bi-youtube {
-    color: red;
-    background-image: url(./1321px.jpg);
+    width: 60px;
+    height: 60px;
 }
 
 .YouTube-title>b {
     color: red;
+    margin-left: 10px;
 }
 
 .YouTube-img {
@@ -334,6 +375,11 @@ li {
 }
 
 @media only screen and (min-width:1440px) {
+    #developers {
+        width: 1440px;
+        margin-left: -72px;
+    }
+
     .YouTube-img {
         margin-left: -30px;
     }
@@ -377,6 +423,19 @@ li {
         font-size: 22px;
     }
 
+    #developers {
+        width: 1024px;
+        margin-left: -44px;
+    }
+
+    .developers-menu {
+        grid-template-columns: repeat(2, 500px);
+    }
+
+    .column-elements {
+        font-size: 25px;
+    }
+
     #YouTube {
         margin-left: 20px;
     }
@@ -384,10 +443,6 @@ li {
     .YouTube-img {
         width: 1000px;
         margin-left: -50px;
-    }
-
-    .bi-youtube {
-        background-image: url(./1024px.jpg);
     }
 
     .more-info-menu {
@@ -421,10 +476,6 @@ li {
         margin-left: 20px;
     }
 
-    .bi-youtube {
-        background-image: url(./991px.jpg);
-    }
-
     .welcome-img {
         width: 645px;
         height: 350px;
@@ -445,6 +496,15 @@ li {
 
     .welcome-text-child {
         font-size: 20px;
+    }
+
+    #developers {
+        margin-left: -148px;
+        width: 991px;
+    }
+
+    .developers-menu {
+        grid-template-columns: repeat(2, 450px);
     }
 
     #YouTube {
@@ -491,6 +551,25 @@ li {
         margin-top: 400px;
     }
 
+    #developers {
+        width: 768px;
+        margin-left: -36px;
+    }
+
+    .developers-menu {
+        margin-left: -22px;
+        grid-template-columns: repeat(2, 395px);
+    }
+
+    .developers-avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .column-elements {
+        font-size: 22px;
+    }
+
     #YouTube {
         margin-left: -10px;
     }
@@ -498,10 +577,6 @@ li {
     .YouTube-img {
         width: 730px;
         margin-left: -5px;
-    }
-
-    .bi-youtube {
-        background-image: url(./768px.jpg);
     }
 
     .discord-img {
@@ -546,6 +621,17 @@ li {
         margin-top: 20px;
     }
 
+    #developers {
+        width: 425px;
+        margin-left: -12px;
+        height: 1150px;
+    }
+
+    .developers-menu {
+        grid-template-columns: repeat(1, 350px);
+        margin-left: 10px;
+    }
+
     .welcome-text {
         margin-left: 15px;
         width: 300px;
@@ -562,10 +648,6 @@ li {
 
     .YouTube-heading {
         display: grid;
-    }
-
-    .bi-youtube {
-        background-image: url(./425px.jpg);
     }
 
     .YH-part-2 {
@@ -592,6 +674,11 @@ li {
 @media only screen and (max-width: 375px) {
     .container {
         max-width: 375px;
+    }
+
+    .bi-list {
+        width: 30px;
+        height: 30px;
     }
 
     .AC {
@@ -621,21 +708,16 @@ li {
         width: 300px;
     }
 
-    .bi-list {
-        width: 30px;
-        height: 30px;
-    }
-
     .close {
         margin-left: 320px;
     }
 
-    .YouTube-img {
-        width: 350px;
+    #developers {
+        width: 375px;
     }
 
-    .bi-youtube {
-        background-image: url(./375px.jpg);
+    .YouTube-img {
+        width: 350px;
     }
 
     .discord-img {
@@ -658,6 +740,8 @@ li {
 
     .AC {
         margin-left: 10px;
+        margin-right: -50px;
+        font-size: 28px;
     }
 
     .bi-list {
@@ -692,17 +776,20 @@ li {
         font-size: 18px;
     }
 
-    .AC {
-        margin-right: -50px;
-        font-size: 28px;
+    #developers {
+        width: 320px;
+    }
+
+    .developers-menu {
+        margin-left: -20px;
+    }
+
+    .column-elements {
+        font-size: 18px;
     }
 
     .YouTube-img {
         width: 300px;
-    }
-
-    .bi-youtube {
-        background-image: url(./320px.jpg);
     }
 
     .YouTube-text {
